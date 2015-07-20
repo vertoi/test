@@ -1,17 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/screen.css" />
-</head>
-<body>
-    <div id="main">
-        <div class="row">
-            <div class="col-xs-12 col-md-9">
-              abc
-            </div>
-        </div>
+    <link href='stylesheets/screen.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id='toggle'>
+      <div class='one'></div>
+      <div class='two'></div>
+      <div class='three'></div>
     </div>
-</body>
+    <div id='sidebar'>
+      <h4>MENU</h4>
+      <ul>
+        <li>
+          <a href='index.html'>Lorem Ipsum</a>
+        </li>
+        <li>
+          <a href='index.html'>Lorem Ipsum</a>
+        </li>
+        <li>
+          <a href='index.html'>Lorem Ipsum</a>
+        </li>
+        <li>
+          <a href='index.html'>Lorem Ipsum</a>
+        </li>
+        <li>
+          <a href='index.html'>Lorem Ipsum</a>
+        </li>
+      </ul>
+    </div>
+    <div id='main'>
+      <div class='row'>
+        <div class='line'></div>
+        <div class='col-xs-12 col-md-12'>
+          <header id='site-header'>
+            <h1>Site Header</h1>
+            <small>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.
+            </small>
+            <div class='buttons'>
+              <button class='download'>Download</button>
+              <button class='more'>More</button>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class='row' id='features'>
+        <div class='col-xs-12 col-md-12'>
+          <header>
+            <h3>Features</h3>
+          </header>
+          <div class='col-xs-12 col-md-3'>
+            <div class='feature responsive'>
+              <img alt='Responsive' src='images/responsive.png'>
+              <h5>Responsive Layout</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.</p>
+            </div>
+          </div>
+          <div class='col-xs-12 col-md-3'>
+            <div class='feature tag'>
+              <img alt='Free' src='images/tag70.png'>
+              <h5>Price - 0$!</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.</p>
+            </div>
+          </div>
+          <div class='col-xs-12 col-md-3'>
+            <div class='feature code'>
+              <img alt='Code' src='images/code.png'>
+              <h5>Wrote in HAML & SASS</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+    <script>
+      $('#sidebar ul li a').click(function(){
+          $("#sidebar").slideUp(200);
+      });
+       $("#toggle").click(function() {
+          $(this).toggleClass("on");
+           $("#sidebar").slideToggle(600);
+      });
+      $("#main").click(function(){
+          $("#sidebar").slideUp(600);
+          if($("#sidebar").css("display") != "none") {
+              $("#toggle").toggleClass("on");
+          }
+      });
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+  </body>
 </html>

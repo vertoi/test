@@ -2,7 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600|Montserrat|Raleway:400,600&subset=latin,latin-ext);
+/* line 5, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1111,9 +1112,225 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     order: 1;
   }
 }
-/* line 12, ../sass/screen.scss */
+/** MEDIA QUERIES **/
+@media all and (min-width: 801px) and (max-width: 1350px) {
+  /* line 15, ../sass/screen.scss */
+  #sidebar {
+    width: 25% !important;
+  }
+}
+@media all and (max-width: 590px) {
+  /* line 20, ../sass/screen.scss */
+  #sidebar {
+    width: 100% !important;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 800px) {
+  /* line 25, ../sass/screen.scss */
+  #sidebar {
+    width: 45% !important;
+  }
+}
+/** **/
+/* line 30, ../sass/screen.scss */
+html {
+  overflow-x: hidden;
+  background: #fdfdfd;
+  color: #272727;
+  font-family: 'Open Sans', sans-serif;
+  height: 2250px;
+}
+/* line 31, ../sass/screen.scss */
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 35, ../sass/screen.scss */
+a, a:visited {
+  color: #FA5F5F;
+  transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+}
+/* line 41, ../sass/screen.scss */
+a:hover, a:visited:hover {
+  opacity: 0.75;
+  transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+}
+
+/* line 49, ../sass/screen.scss */
 #main {
-  width: 1100px;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
+}
+
+/* line 53, ../sass/screen.scss */
+.line {
+  width: 100%;
+  height: 3px;
+  background: #FA5F5F;
+}
+
+/* line 58, ../sass/screen.scss */
+#toggle {
+  width: 28px;
+  height: 30px;
+  margin: 10px;
+  position: fixed;
+  z-index: 2;
+  left: 0.1em;
+}
+
+/* line 67, ../sass/screen.scss */
+#toggle div {
+  z-index: 2;
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 4px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+/* line 78, ../sass/screen.scss */
+#toggle.on .one {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+/* line 82, ../sass/screen.scss */
+#toggle.on .two {
+  opacity: 0;
+}
+
+/* line 86, ../sass/screen.scss */
+#toggle.on .three {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/* line 89, ../sass/screen.scss */
+#sidebar {
+  z-index: 1;
+  border-right: 2px solid #FA5F5F;
+  border-top: 3px solid #FA5F5F;
+  width: 15%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: none;
+  position: fixed;
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  background: rgba(41, 41, 41, 0.7);
+}
+/* line 103, ../sass/screen.scss */
+#sidebar h4 {
+  position: relative;
+  left: 1em;
+  font-size: 175%;
+  font-family: raleway;
+  font-weight: 600;
+  color: #FA5F5F;
+  top: 1.35em;
+}
+/* line 111, ../sass/screen.scss */
+#sidebar ul {
+  padding: 1em;
+  position: relative;
+  top: 1.45em;
+  left: 1em;
+  color: #fff;
+}
+/* line 117, ../sass/screen.scss */
+#sidebar ul li {
+  list-style-type: square;
+  padding: 0.3em;
+  padding-top: 1.2em;
+  color: #FA5F5F;
+  border-bottom: 3px solid rgba(250, 95, 95, 0.75);
+}
+/* line 120, ../sass/screen.scss */
+#sidebar ul li a {
+  text-decoration: none;
+  color: #fff !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 105%;
+}
+
+/* line 130, ../sass/screen.scss */
+#site-header {
+  color: #fdfdfd;
+  text-align: center;
+  padding: 3em 1em 1.5em 1em;
+  background: linear-gradient(rgba(250, 95, 95, 0.7), rgba(250, 95, 95, 0.7)), url(../images/header.jpg);
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+/* line 141, ../sass/screen.scss */
+#site-header h1 {
+  font-size: 235%;
+  font-family: 'Montserrat', sans-serif;
+}
+/* line 143, ../sass/screen.scss */
+#site-header h1:before {
+  content: ":";
+  color: #FA5F5F;
+  margin-right: 3px;
+  font-size: 100%;
+}
+/* line 150, ../sass/screen.scss */
+#site-header small {
+  display: block;
+  margin-top: 25px;
+}
+/* line 153, ../sass/screen.scss */
+#site-header .buttons {
+  margin-top: 25px;
+}
+/* line 155, ../sass/screen.scss */
+#site-header .buttons button {
+  transition: .75s;
+  background: none;
+  padding: 16px 29px 16px 29px;
+  font-family: raleway;
+  font-size: 105%;
+  border: #FFF 1px solid;
+  color: #fff;
+}
+/* line 163, ../sass/screen.scss */
+#site-header .buttons button:hover {
+  transition: 1s;
+  cursor: pointer;
+  background: #FA5F5F;
+}
+/* line 167, ../sass/screen.scss */
+#site-header .buttons button:focus {
+  outline: none;
+  opacity: 0.5;
+  transition: .55s;
+}
+
+/* line 176, ../sass/screen.scss */
+#features {
+  flex-direction: column;
+}
+/* line 180, ../sass/screen.scss */
+#features .feature.responsive {
+  order: 1;
+}
+/* line 183, ../sass/screen.scss */
+#features .feature.tag {
+  order: 2;
+}
+/* line 186, ../sass/screen.scss */
+#features .feature.code {
+  order: 3;
 }
