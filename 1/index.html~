@@ -4,11 +4,9 @@
     <meta charset='UTF-8'>
     <title>Document</title>
     <link href='stylesheets/screen.css' rel='stylesheet'>
-    <link href='stylesheets/animate.css' rel='stylesheet'>
-    <link href='stylesheets/swift.css' rel='stylesheet'>
   </head>
   <body>
-    <div id='toggle' class="wow rubberBand">
+    <div id='toggle'>
       <div class='one'></div>
       <div class='two'></div>
       <div class='three'></div>
@@ -35,14 +33,14 @@
     </div>
     <div id='main'>
       <div class='row'>
-        <div class='line wow bounceInLeft'></div>
+        <div class='line'></div>
         <div class='col-xs-12 col-md-12'>
-          <header id='site-header' class="wow flipInX">
-            <h1 class="wow rubberBand">Site Header</h1>
-            <small class="wow rubberBand">
+          <header id='site-header'>
+            <h1>Site Header</h1>
+            <small>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.
             </small>
-            <div class='buttons wow rubberBand'>
+            <div class='buttons'>
               <button class='download'>Download</button>
               <button class='more'>More</button>
             </div>
@@ -50,9 +48,9 @@
         </div>
       </div>
       <header class="section-header">
-        <h3 class="wow flipInX">About It</h3>
+        <h3>About It</h3>
       </header>
-      <div class="row wow flipInX" id="about">
+      <div class="row" id="about">
         <div class="col-xs-12 col-md-12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Donec egestas est neque, nec luctus sem iaculis id.
@@ -70,25 +68,25 @@
         </div>
       </div>
       <header class="section-header">
-        <h3 class="wow flipInX">Features</h3>
+        <h3>Features</h3>
       </header>
-      <div class='row wow flipInX' id='features'>
+      <div class='row' id='features'>
           <div class='col-xs-12 col-md-4 feature'>
-            <div class='responsive wow slideInLeft'>
+            <div class='responsive'>
               <img alt='Responsive' src='images/responsive.png'>
               <h5>Responsive Layout</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.</p>
             </div>
           </div>
           <div class='col-xs-12 col-md-4 feature'>
-            <div class='tag wow slideInUp'>
+            <div class='tag'>
               <img alt='Free' src='images/tag70.png'>
               <h5>Price - 0$!</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.</p>
             </div>
           </div>
           <div class='col-xs-12 col-md-4 feature'>
-            <div class='code wow slideInRight'>
+            <div class='code'>
               <img alt='Code' src='images/code.png'>
               <h5>Writen in HTML & SASS</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec viverra nunc. Phasellus mollis tempus erat ac imperdiet.</p>
@@ -98,11 +96,7 @@
       </div>
     </div>
     <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-   <script src="js/swift.js"></script>
-    <script src="js/wow.min.js"></script>
     <script>
-     new WOW().init();
-    $('#site-header').swift({'type': 'dom', 'positionStart': '0','positionEnd': '-100', 'length': '100'});
       $('#sidebar ul li a').click(function(){
           $("#sidebar").slideUp(200);
       });

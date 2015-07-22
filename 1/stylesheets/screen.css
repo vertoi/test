@@ -1379,6 +1379,11 @@ a:hover, a:visited:hover {
 }
 
 /* line 130, ../sass/screen.scss */
+.row {
+  overflow-y: hidden !important;
+}
+
+/* line 131, ../sass/screen.scss */
 #site-header {
   color: #fdfdfd;
   text-align: center;
@@ -1389,28 +1394,28 @@ a:hover, a:visited:hover {
   -moz-background-size: cover;
   -webkit-background-size: cover;
 }
-/* line 141, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #site-header h1 {
   font-size: 235%;
   font-family: 'Montserrat', sans-serif;
 }
-/* line 143, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #site-header h1:before {
   content: ":";
   color: #FA5F5F;
   margin-right: 3px;
   font-size: 100%;
 }
-/* line 150, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #site-header small {
   display: block;
   margin-top: 25px;
 }
-/* line 153, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #site-header .buttons {
   margin-top: 25px;
 }
-/* line 155, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #site-header .buttons button {
   transition: .75s;
   background: none;
@@ -1420,20 +1425,20 @@ a:hover, a:visited:hover {
   border: #FFF 1px solid;
   color: #fff;
 }
-/* line 163, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #site-header .buttons button:hover {
   transition: 1s;
   cursor: pointer;
   background: #FA5F5F;
 }
-/* line 167, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 #site-header .buttons button:focus {
   outline: none;
   opacity: 0.5;
   transition: .55s;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .section-header h3 {
   margin: 0 auto;
   text-align: center;
@@ -1443,14 +1448,14 @@ a:hover, a:visited:hover {
   padding-top: 1em;
   color: #555;
 }
-/* line 185, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .section-header h3:after {
   content: "\a    .   .   .   ";
   white-space: pre;
   color: #FA5F5F;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .row#about {
   width: 1124px;
   max-width: 100%;
@@ -1460,13 +1465,13 @@ a:hover, a:visited:hover {
   text-align: center;
   font-size: 95%;
 }
-/* line 200, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .row#about h4 {
   font-size: 110%;
   font-family: Raleway;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .row#features {
   color: #444;
   text-align: center;
@@ -1475,26 +1480,26 @@ a:hover, a:visited:hover {
   width: 1124px;
   max-width: 100%;
 }
-/* line 212, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .row#features .feature {
   font-size: 85%;
 }
-/* line 214, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .row#features .feature h5 {
   font-size: 125%;
   line-height: 1.65;
   color: #FA5F5F;
   font-family: Raleway;
 }
-/* line 220, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .row#features .feature .responsive img {
   width: 50px;
 }
-/* line 223, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .row#features .feature .tag img {
   width: 45px;
 }
-/* line 226, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .row#features .feature .code img {
   width: 45px;
 }

@@ -127,9 +127,7 @@ a, a:visited {
   }
 
 }
-.row { overflow-y: hidden !important; }
 #site-header { color: #fdfdfd;
-    
   text-align: center;
   padding: 3em 1em 1.5em 1em;
   background :
