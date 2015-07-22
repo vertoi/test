@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600|Montserrat|Raleway:400,600&subset=latin,latin-ext);
-/* line 5, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../WebServ/public_html/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -73,7 +73,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
-/* line 1, ../sass/flexboxgrid.min.scss */
+/*
+ *
+ * Uncomment and set these variables to customize the grid.
+ *
+ * :root {
+ *  --gutter-width: 1rem;
+ *  --outer-margin: 2rem;
+ *  --gutter-compensation: calc( var( --gutter-width / 2 ) * -1 );
+ *  --half-gutter-width: calc( var( --gutter-width / 2 ) );
+ *  --screen-xs-min: 30em;
+ *  --screen-sm-min: 48em;
+ *  --screen-md-min: 62em;
+ *  --screen-lg-min: 75em;
+ *  --container-sm: calc( 45rem + var( --gutter-width ) );
+ *  --container-md: calc( 60rem + var( --gutter-width ) );
+ *  --container-lg: calc( 70rem + var( --gutter-width ) );
+ * }
+ *
+*/
+/* line 21, ../sass/flexboxgrid.scss */
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -81,7 +100,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-left: 2rem;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 28, ../sass/flexboxgrid.scss */
 .row {
   box-sizing: border-box;
   display: -webkit-flex;
@@ -96,35 +115,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -.5rem;
-  margin-left: -.5rem;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 46, ../sass/flexboxgrid.scss */
 .row.reverse {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 52, ../sass/flexboxgrid.scss */
 .col.reverse {
   -webkit-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
-.col-xs, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-offset-1, .col-xs-offset-10, .col-xs-offset-11, .col-xs-offset-12, .col-xs-offset-2, .col-xs-offset-3, .col-xs-offset-4, .col-xs-offset-5, .col-xs-offset-6, .col-xs-offset-7, .col-xs-offset-8, .col-xs-offset-9 {
+/* line 58, ../sass/flexboxgrid.scss */
+.col-xs,
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-offset-1,
+.col-xs-offset-2,
+.col-xs-offset-3,
+.col-xs-offset-4,
+.col-xs-offset-5,
+.col-xs-offset-6,
+.col-xs-offset-7,
+.col-xs-offset-8,
+.col-xs-offset-9,
+.col-xs-offset-10,
+.col-xs-offset-11,
+.col-xs-offset-12 {
   box-sizing: border-box;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 91, ../sass/flexboxgrid.scss */
 .col-xs {
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -135,7 +178,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 100%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 101, ../sass/flexboxgrid.scss */
 .col-xs-1 {
   -webkit-flex-basis: 8.333%;
   -ms-flex-preferred-size: 8.333%;
@@ -143,7 +186,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 8.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 108, ../sass/flexboxgrid.scss */
 .col-xs-2 {
   -webkit-flex-basis: 16.667%;
   -ms-flex-preferred-size: 16.667%;
@@ -151,7 +194,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 16.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 115, ../sass/flexboxgrid.scss */
 .col-xs-3 {
   -webkit-flex-basis: 25%;
   -ms-flex-preferred-size: 25%;
@@ -159,7 +202,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 25%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 122, ../sass/flexboxgrid.scss */
 .col-xs-4 {
   -webkit-flex-basis: 33.333%;
   -ms-flex-preferred-size: 33.333%;
@@ -167,7 +210,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 33.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 129, ../sass/flexboxgrid.scss */
 .col-xs-5 {
   -webkit-flex-basis: 41.667%;
   -ms-flex-preferred-size: 41.667%;
@@ -175,7 +218,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 41.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 136, ../sass/flexboxgrid.scss */
 .col-xs-6 {
   -webkit-flex-basis: 50%;
   -ms-flex-preferred-size: 50%;
@@ -183,7 +226,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 50%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 143, ../sass/flexboxgrid.scss */
 .col-xs-7 {
   -webkit-flex-basis: 58.333%;
   -ms-flex-preferred-size: 58.333%;
@@ -191,7 +234,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 58.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 150, ../sass/flexboxgrid.scss */
 .col-xs-8 {
   -webkit-flex-basis: 66.667%;
   -ms-flex-preferred-size: 66.667%;
@@ -199,7 +242,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 66.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 157, ../sass/flexboxgrid.scss */
 .col-xs-9 {
   -webkit-flex-basis: 75%;
   -ms-flex-preferred-size: 75%;
@@ -207,7 +250,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 75%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 164, ../sass/flexboxgrid.scss */
 .col-xs-10 {
   -webkit-flex-basis: 83.333%;
   -ms-flex-preferred-size: 83.333%;
@@ -215,7 +258,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 83.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 171, ../sass/flexboxgrid.scss */
 .col-xs-11 {
   -webkit-flex-basis: 91.667%;
   -ms-flex-preferred-size: 91.667%;
@@ -223,7 +266,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 91.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 178, ../sass/flexboxgrid.scss */
 .col-xs-12 {
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
@@ -231,62 +274,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-width: 100%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 185, ../sass/flexboxgrid.scss */
 .col-xs-offset-1 {
   margin-left: 8.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 189, ../sass/flexboxgrid.scss */
 .col-xs-offset-2 {
   margin-left: 16.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 193, ../sass/flexboxgrid.scss */
 .col-xs-offset-3 {
   margin-left: 25%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 197, ../sass/flexboxgrid.scss */
 .col-xs-offset-4 {
   margin-left: 33.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 201, ../sass/flexboxgrid.scss */
 .col-xs-offset-5 {
   margin-left: 41.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 205, ../sass/flexboxgrid.scss */
 .col-xs-offset-6 {
   margin-left: 50%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 209, ../sass/flexboxgrid.scss */
 .col-xs-offset-7 {
   margin-left: 58.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 213, ../sass/flexboxgrid.scss */
 .col-xs-offset-8 {
   margin-left: 66.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 217, ../sass/flexboxgrid.scss */
 .col-xs-offset-9 {
   margin-left: 75%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 221, ../sass/flexboxgrid.scss */
 .col-xs-offset-10 {
   margin-left: 83.333%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 225, ../sass/flexboxgrid.scss */
 .col-xs-offset-11 {
   margin-left: 91.667%;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 229, ../sass/flexboxgrid.scss */
 .start-xs {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -294,7 +337,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: start;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 236, ../sass/flexboxgrid.scss */
 .center-xs {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -302,7 +345,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 243, ../sass/flexboxgrid.scss */
 .end-xs {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -310,49 +353,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: end;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 250, ../sass/flexboxgrid.scss */
 .top-xs {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 256, ../sass/flexboxgrid.scss */
 .middle-xs {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 262, ../sass/flexboxgrid.scss */
 .bottom-xs {
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 268, ../sass/flexboxgrid.scss */
 .around-xs {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 274, ../sass/flexboxgrid.scss */
 .between-xs {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 280, ../sass/flexboxgrid.scss */
 .first-xs {
   -webkit-order: -1;
   -ms-flex-order: -1;
   order: -1;
 }
 
-/* line 1, ../sass/flexboxgrid.min.scss */
+/* line 286, ../sass/flexboxgrid.scss */
 .last-xs {
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -360,22 +403,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 293, ../sass/flexboxgrid.scss */
   .container {
     width: 46rem;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
-  .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-offset-1, .col-sm-offset-10, .col-sm-offset-11, .col-sm-offset-12, .col-sm-offset-2, .col-sm-offset-3, .col-sm-offset-4, .col-sm-offset-5, .col-sm-offset-6, .col-sm-offset-7, .col-sm-offset-8, .col-sm-offset-9 {
+  /* line 297, ../sass/flexboxgrid.scss */
+  .col-sm,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-offset-1,
+  .col-sm-offset-2,
+  .col-sm-offset-3,
+  .col-sm-offset-4,
+  .col-sm-offset-5,
+  .col-sm-offset-6,
+  .col-sm-offset-7,
+  .col-sm-offset-8,
+  .col-sm-offset-9,
+  .col-sm-offset-10,
+  .col-sm-offset-11,
+  .col-sm-offset-12 {
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 330, ../sass/flexboxgrid.scss */
   .col-sm {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -386,7 +453,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 100%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 340, ../sass/flexboxgrid.scss */
   .col-sm-1 {
     -webkit-flex-basis: 8.333%;
     -ms-flex-preferred-size: 8.333%;
@@ -394,7 +461,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 8.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 347, ../sass/flexboxgrid.scss */
   .col-sm-2 {
     -webkit-flex-basis: 16.667%;
     -ms-flex-preferred-size: 16.667%;
@@ -402,7 +469,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 16.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 354, ../sass/flexboxgrid.scss */
   .col-sm-3 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -410,7 +477,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 25%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 361, ../sass/flexboxgrid.scss */
   .col-sm-4 {
     -webkit-flex-basis: 33.333%;
     -ms-flex-preferred-size: 33.333%;
@@ -418,7 +485,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 33.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 368, ../sass/flexboxgrid.scss */
   .col-sm-5 {
     -webkit-flex-basis: 41.667%;
     -ms-flex-preferred-size: 41.667%;
@@ -426,7 +493,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 41.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 375, ../sass/flexboxgrid.scss */
   .col-sm-6 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -434,7 +501,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 50%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 382, ../sass/flexboxgrid.scss */
   .col-sm-7 {
     -webkit-flex-basis: 58.333%;
     -ms-flex-preferred-size: 58.333%;
@@ -442,7 +509,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 58.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 389, ../sass/flexboxgrid.scss */
   .col-sm-8 {
     -webkit-flex-basis: 66.667%;
     -ms-flex-preferred-size: 66.667%;
@@ -450,7 +517,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 66.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 396, ../sass/flexboxgrid.scss */
   .col-sm-9 {
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -458,7 +525,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 75%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 403, ../sass/flexboxgrid.scss */
   .col-sm-10 {
     -webkit-flex-basis: 83.333%;
     -ms-flex-preferred-size: 83.333%;
@@ -466,7 +533,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 83.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 410, ../sass/flexboxgrid.scss */
   .col-sm-11 {
     -webkit-flex-basis: 91.667%;
     -ms-flex-preferred-size: 91.667%;
@@ -474,7 +541,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 91.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 417, ../sass/flexboxgrid.scss */
   .col-sm-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -482,62 +549,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 100%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 424, ../sass/flexboxgrid.scss */
   .col-sm-offset-1 {
     margin-left: 8.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 428, ../sass/flexboxgrid.scss */
   .col-sm-offset-2 {
     margin-left: 16.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 432, ../sass/flexboxgrid.scss */
   .col-sm-offset-3 {
     margin-left: 25%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 436, ../sass/flexboxgrid.scss */
   .col-sm-offset-4 {
     margin-left: 33.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 440, ../sass/flexboxgrid.scss */
   .col-sm-offset-5 {
     margin-left: 41.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 444, ../sass/flexboxgrid.scss */
   .col-sm-offset-6 {
     margin-left: 50%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 448, ../sass/flexboxgrid.scss */
   .col-sm-offset-7 {
     margin-left: 58.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 452, ../sass/flexboxgrid.scss */
   .col-sm-offset-8 {
     margin-left: 66.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 456, ../sass/flexboxgrid.scss */
   .col-sm-offset-9 {
     margin-left: 75%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 460, ../sass/flexboxgrid.scss */
   .col-sm-offset-10 {
     margin-left: 83.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 464, ../sass/flexboxgrid.scss */
   .col-sm-offset-11 {
     margin-left: 91.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 468, ../sass/flexboxgrid.scss */
   .start-sm {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -545,7 +612,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: start;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 475, ../sass/flexboxgrid.scss */
   .center-sm {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -553,7 +620,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 482, ../sass/flexboxgrid.scss */
   .end-sm {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -561,49 +628,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: end;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 489, ../sass/flexboxgrid.scss */
   .top-sm {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 495, ../sass/flexboxgrid.scss */
   .middle-sm {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 501, ../sass/flexboxgrid.scss */
   .bottom-sm {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 507, ../sass/flexboxgrid.scss */
   .around-sm {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 513, ../sass/flexboxgrid.scss */
   .between-sm {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 519, ../sass/flexboxgrid.scss */
   .first-sm {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 525, ../sass/flexboxgrid.scss */
   .last-sm {
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -611,22 +678,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 62em) {
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 533, ../sass/flexboxgrid.scss */
   .container {
     width: 61rem;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
-  .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-offset-1, .col-md-offset-10, .col-md-offset-11, .col-md-offset-12, .col-md-offset-2, .col-md-offset-3, .col-md-offset-4, .col-md-offset-5, .col-md-offset-6, .col-md-offset-7, .col-md-offset-8, .col-md-offset-9 {
+  /* line 537, ../sass/flexboxgrid.scss */
+  .col-md,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-offset-1,
+  .col-md-offset-2,
+  .col-md-offset-3,
+  .col-md-offset-4,
+  .col-md-offset-5,
+  .col-md-offset-6,
+  .col-md-offset-7,
+  .col-md-offset-8,
+  .col-md-offset-9,
+  .col-md-offset-10,
+  .col-md-offset-11,
+  .col-md-offset-12 {
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 570, ../sass/flexboxgrid.scss */
   .col-md {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -637,7 +728,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 100%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 580, ../sass/flexboxgrid.scss */
   .col-md-1 {
     -webkit-flex-basis: 8.333%;
     -ms-flex-preferred-size: 8.333%;
@@ -645,7 +736,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 8.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 587, ../sass/flexboxgrid.scss */
   .col-md-2 {
     -webkit-flex-basis: 16.667%;
     -ms-flex-preferred-size: 16.667%;
@@ -653,7 +744,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 16.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 594, ../sass/flexboxgrid.scss */
   .col-md-3 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -661,7 +752,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 25%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 601, ../sass/flexboxgrid.scss */
   .col-md-4 {
     -webkit-flex-basis: 33.333%;
     -ms-flex-preferred-size: 33.333%;
@@ -669,7 +760,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 33.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 608, ../sass/flexboxgrid.scss */
   .col-md-5 {
     -webkit-flex-basis: 41.667%;
     -ms-flex-preferred-size: 41.667%;
@@ -677,7 +768,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 41.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 615, ../sass/flexboxgrid.scss */
   .col-md-6 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -685,7 +776,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 50%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 622, ../sass/flexboxgrid.scss */
   .col-md-7 {
     -webkit-flex-basis: 58.333%;
     -ms-flex-preferred-size: 58.333%;
@@ -693,7 +784,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 58.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 629, ../sass/flexboxgrid.scss */
   .col-md-8 {
     -webkit-flex-basis: 66.667%;
     -ms-flex-preferred-size: 66.667%;
@@ -701,7 +792,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 66.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 636, ../sass/flexboxgrid.scss */
   .col-md-9 {
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -709,7 +800,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 75%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 643, ../sass/flexboxgrid.scss */
   .col-md-10 {
     -webkit-flex-basis: 83.333%;
     -ms-flex-preferred-size: 83.333%;
@@ -717,7 +808,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 83.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 650, ../sass/flexboxgrid.scss */
   .col-md-11 {
     -webkit-flex-basis: 91.667%;
     -ms-flex-preferred-size: 91.667%;
@@ -725,7 +816,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 91.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 657, ../sass/flexboxgrid.scss */
   .col-md-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -733,62 +824,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 100%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 664, ../sass/flexboxgrid.scss */
   .col-md-offset-1 {
     margin-left: 8.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 668, ../sass/flexboxgrid.scss */
   .col-md-offset-2 {
     margin-left: 16.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 672, ../sass/flexboxgrid.scss */
   .col-md-offset-3 {
     margin-left: 25%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 676, ../sass/flexboxgrid.scss */
   .col-md-offset-4 {
     margin-left: 33.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 680, ../sass/flexboxgrid.scss */
   .col-md-offset-5 {
     margin-left: 41.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 684, ../sass/flexboxgrid.scss */
   .col-md-offset-6 {
     margin-left: 50%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 688, ../sass/flexboxgrid.scss */
   .col-md-offset-7 {
     margin-left: 58.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 692, ../sass/flexboxgrid.scss */
   .col-md-offset-8 {
     margin-left: 66.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 696, ../sass/flexboxgrid.scss */
   .col-md-offset-9 {
     margin-left: 75%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 700, ../sass/flexboxgrid.scss */
   .col-md-offset-10 {
     margin-left: 83.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 704, ../sass/flexboxgrid.scss */
   .col-md-offset-11 {
     margin-left: 91.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 708, ../sass/flexboxgrid.scss */
   .start-md {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -796,7 +887,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: start;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 715, ../sass/flexboxgrid.scss */
   .center-md {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -804,7 +895,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 722, ../sass/flexboxgrid.scss */
   .end-md {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -812,49 +903,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: end;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 729, ../sass/flexboxgrid.scss */
   .top-md {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 735, ../sass/flexboxgrid.scss */
   .middle-md {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 741, ../sass/flexboxgrid.scss */
   .bottom-md {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 747, ../sass/flexboxgrid.scss */
   .around-md {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 753, ../sass/flexboxgrid.scss */
   .between-md {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 759, ../sass/flexboxgrid.scss */
   .first-md {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 765, ../sass/flexboxgrid.scss */
   .last-md {
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -862,22 +953,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 @media only screen and (min-width: 75em) {
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 773, ../sass/flexboxgrid.scss */
   .container {
     width: 71rem;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
-  .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-offset-1, .col-lg-offset-10, .col-lg-offset-11, .col-lg-offset-12, .col-lg-offset-2, .col-lg-offset-3, .col-lg-offset-4, .col-lg-offset-5, .col-lg-offset-6, .col-lg-offset-7, .col-lg-offset-8, .col-lg-offset-9 {
+  /* line 777, ../sass/flexboxgrid.scss */
+  .col-lg,
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-offset-1,
+  .col-lg-offset-2,
+  .col-lg-offset-3,
+  .col-lg-offset-4,
+  .col-lg-offset-5,
+  .col-lg-offset-6,
+  .col-lg-offset-7,
+  .col-lg-offset-8,
+  .col-lg-offset-9,
+  .col-lg-offset-10,
+  .col-lg-offset-11,
+  .col-lg-offset-12 {
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 810, ../sass/flexboxgrid.scss */
   .col-lg {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
@@ -888,7 +1003,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 100%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 820, ../sass/flexboxgrid.scss */
   .col-lg-1 {
     -webkit-flex-basis: 8.333%;
     -ms-flex-preferred-size: 8.333%;
@@ -896,7 +1011,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 8.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 827, ../sass/flexboxgrid.scss */
   .col-lg-2 {
     -webkit-flex-basis: 16.667%;
     -ms-flex-preferred-size: 16.667%;
@@ -904,7 +1019,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 16.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 834, ../sass/flexboxgrid.scss */
   .col-lg-3 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -912,7 +1027,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 25%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 841, ../sass/flexboxgrid.scss */
   .col-lg-4 {
     -webkit-flex-basis: 33.333%;
     -ms-flex-preferred-size: 33.333%;
@@ -920,7 +1035,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 33.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 848, ../sass/flexboxgrid.scss */
   .col-lg-5 {
     -webkit-flex-basis: 41.667%;
     -ms-flex-preferred-size: 41.667%;
@@ -928,7 +1043,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 41.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 855, ../sass/flexboxgrid.scss */
   .col-lg-6 {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
@@ -936,7 +1051,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 50%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 862, ../sass/flexboxgrid.scss */
   .col-lg-7 {
     -webkit-flex-basis: 58.333%;
     -ms-flex-preferred-size: 58.333%;
@@ -944,7 +1059,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 58.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 869, ../sass/flexboxgrid.scss */
   .col-lg-8 {
     -webkit-flex-basis: 66.667%;
     -ms-flex-preferred-size: 66.667%;
@@ -952,7 +1067,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 66.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 876, ../sass/flexboxgrid.scss */
   .col-lg-9 {
     -webkit-flex-basis: 75%;
     -ms-flex-preferred-size: 75%;
@@ -960,7 +1075,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 75%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 883, ../sass/flexboxgrid.scss */
   .col-lg-10 {
     -webkit-flex-basis: 83.333%;
     -ms-flex-preferred-size: 83.333%;
@@ -968,7 +1083,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 83.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 890, ../sass/flexboxgrid.scss */
   .col-lg-11 {
     -webkit-flex-basis: 91.667%;
     -ms-flex-preferred-size: 91.667%;
@@ -976,7 +1091,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 91.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 897, ../sass/flexboxgrid.scss */
   .col-lg-12 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -984,62 +1099,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     max-width: 100%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 904, ../sass/flexboxgrid.scss */
   .col-lg-offset-1 {
     margin-left: 8.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 908, ../sass/flexboxgrid.scss */
   .col-lg-offset-2 {
     margin-left: 16.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 912, ../sass/flexboxgrid.scss */
   .col-lg-offset-3 {
     margin-left: 25%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 916, ../sass/flexboxgrid.scss */
   .col-lg-offset-4 {
     margin-left: 33.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 920, ../sass/flexboxgrid.scss */
   .col-lg-offset-5 {
     margin-left: 41.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 924, ../sass/flexboxgrid.scss */
   .col-lg-offset-6 {
     margin-left: 50%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 928, ../sass/flexboxgrid.scss */
   .col-lg-offset-7 {
     margin-left: 58.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 932, ../sass/flexboxgrid.scss */
   .col-lg-offset-8 {
     margin-left: 66.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 936, ../sass/flexboxgrid.scss */
   .col-lg-offset-9 {
     margin-left: 75%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 940, ../sass/flexboxgrid.scss */
   .col-lg-offset-10 {
     margin-left: 83.333%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 944, ../sass/flexboxgrid.scss */
   .col-lg-offset-11 {
     margin-left: 91.667%;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 948, ../sass/flexboxgrid.scss */
   .start-lg {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -1047,7 +1162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: start;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 955, ../sass/flexboxgrid.scss */
   .center-lg {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -1055,7 +1170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: center;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 962, ../sass/flexboxgrid.scss */
   .end-lg {
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -1063,49 +1178,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: end;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 969, ../sass/flexboxgrid.scss */
   .top-lg {
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 975, ../sass/flexboxgrid.scss */
   .middle-lg {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 981, ../sass/flexboxgrid.scss */
   .bottom-lg {
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 987, ../sass/flexboxgrid.scss */
   .around-lg {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 993, ../sass/flexboxgrid.scss */
   .between-lg {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 999, ../sass/flexboxgrid.scss */
   .first-lg {
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
   }
 
-  /* line 1, ../sass/flexboxgrid.min.scss */
+  /* line 1005, ../sass/flexboxgrid.scss */
   .last-lg {
     -webkit-order: 1;
     -ms-flex-order: 1;
@@ -1227,7 +1342,7 @@ a:hover, a:visited:hover {
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   -webkit-transition: opacity 1s;
-  background: rgba(41, 41, 41, 0.7);
+  background: #292929;
 }
 /* line 103, ../sass/screen.scss */
 #sidebar h4 {
@@ -1318,19 +1433,68 @@ a:hover, a:visited:hover {
   transition: .55s;
 }
 
-/* line 176, ../sass/screen.scss */
-#features {
-  flex-direction: column;
+/* line 177, ../sass/screen.scss */
+.section-header h3 {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 0.87;
+  font-size: 155%;
+  font-family: 'raleway', sans-serif;
+  padding-top: 1em;
+  color: #555;
 }
-/* line 180, ../sass/screen.scss */
-#features .feature.responsive {
-  order: 1;
+/* line 185, ../sass/screen.scss */
+.section-header h3:after {
+  content: "\a    .   .   .   ";
+  white-space: pre;
+  color: #FA5F5F;
 }
-/* line 183, ../sass/screen.scss */
-#features .feature.tag {
-  order: 2;
+
+/* line 192, ../sass/screen.scss */
+.row#about {
+  width: 1124px;
+  max-width: 100%;
+  padding-top: 2em;
+  color: #555;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 95%;
 }
-/* line 186, ../sass/screen.scss */
-#features .feature.code {
-  order: 3;
+/* line 200, ../sass/screen.scss */
+.row#about h4 {
+  font-size: 110%;
+  font-family: Raleway;
+}
+
+/* line 205, ../sass/screen.scss */
+.row#features {
+  color: #444;
+  text-align: center;
+  padding-top: 2em;
+  margin: auto;
+  width: 1124px;
+  max-width: 100%;
+}
+/* line 212, ../sass/screen.scss */
+.row#features .feature {
+  font-size: 85%;
+}
+/* line 214, ../sass/screen.scss */
+.row#features .feature h5 {
+  font-size: 125%;
+  line-height: 1.65;
+  color: #FA5F5F;
+  font-family: Raleway;
+}
+/* line 220, ../sass/screen.scss */
+.row#features .feature .responsive img {
+  width: 50px;
+}
+/* line 223, ../sass/screen.scss */
+.row#features .feature .tag img {
+  width: 45px;
+}
+/* line 226, ../sass/screen.scss */
+.row#features .feature .code img {
+  width: 45px;
 }

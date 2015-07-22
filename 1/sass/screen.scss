@@ -5,7 +5,7 @@
 
 @import "compass/reset";
 @import "ie";
-@import "flexboxgrid.min";
+@import "flexboxgrid";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600|Montserrat|Raleway:400,600&subset=latin,latin-ext);
 
 
@@ -99,7 +99,7 @@ a, a:visited {
   -moz-transition: opacity 1s;
   -o-transition: opacity 1s;
   -webkit-transition: opacity 1s;
-  background :rgba(41, 41, 41, 0.7);
+  background : #292929;
   h4 {
     position: relative;
     left: 1em;
@@ -173,18 +173,58 @@ a, a:visited {
   }
 }
 
-#features {
-  flex-direction: column;
+.section-header {
+  h3 {
+  margin:0 auto;
+    text-align: center;
+    line-height: 0.87;
+    font-size: 155%;
+    font-family: 'raleway', sans-serif;
+    padding-top: 1em;
+    color: #555;
+    &:after {
+      content: "\a    .   .   .   ";
+      white-space: pre;
+      color: #FA5F5F;
+    }
+  }
+}
+.row#about {
+  width: 1124px;
+  max-width: 100%;
+  padding-top: 2em;
+  color: #555;
+  margin: 0 auto;
+  text-align :center;
+  font-size: 95%;
+  h4 {
+    font-size: 110%;
+    font-family: Raleway;
+  }
+}
+.row#features {
+  color: #444;
+  text-align: center;
+  padding-top: 2em;
+  margin: auto;
+  width: 1124px;
+  max-width:100%;
   .feature  {
-
-    &.responsive {
-      order: 1;
+    font-size: 85%;
+    h5 {
+      font-size: 125%;
+      line-height: 1.65;
+      color: #FA5F5F;
+      font-family: Raleway;
     }
-    &.tag {
-      order: 2;
+    .responsive img {
+      width:50px;
     }
-    &.code {
-      order: 3;
+    .tag img {
+      width: 45px;
+  }
+    .code img {
+    width: 45px;
     }
   }
 }
